@@ -1,0 +1,44 @@
+.button {
+    width: 200px;
+    height: 42px;
+    background-color: #D58C51;
+    color: #131313;
+    font-size: 14px;
+    border: 2px solid #D58C51;
+  }
+  
+.button:hover {
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+
+.button.another {
+  background-color: transparent;
+  border: 2px solid #D58C51;
+  color: #D58C51;
+}
+
+.button.another:hover {
+  background-color: orangered;
+  color: white;
+  border: 2px solid orangered;
+}
+
+.arrowBack {
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #D58C51;
+  background-color: transparent;
+  color: #D58C51;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  margin-right: 60px;
+}
+
+.arrowBack:hover {
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+}

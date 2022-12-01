@@ -1,0 +1,15 @@
+.footerBasket {
+    border-top: 1px solid #D58C51;
+    height: 80px;
+}
+
+.footerBasket__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerBasket__description-check {
+    display: flex;
+    align-items: center;
+}

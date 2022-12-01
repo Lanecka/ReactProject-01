@@ -1,0 +1,137 @@
+.formValid {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 40px;
+    margin: auto;
+    width: 460px;
+    background-color: white;
+}
+
+.formValid__switch {
+    text-align: end;
+}
+
+.formValid__switch-button {
+    color: #D58C51;
+    font-size: 14px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.formValid__switch:hover {
+    color: orangered;
+}
+
+.formValid__title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+input {
+    margin-top: 10px;
+    border: 1px solid #D58C51;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.formValid__error {
+    color: red;
+}
+
+.formValid__buttons {
+    text-align: center;
+}
+
+.formValid__buttons-click {
+    width: 200px;
+    height: 42px;
+    background-color: #D58C51;
+    color: #131313;
+    font-size: 14px;
+    border: 2px solid #D58C51;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+.formValid__buttons-click:disabled{
+    background-color: #ffdbb9;
+    color: #7f7171;
+}
+
+.formValid__buttons-click:hover {
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+
+.formValid__buttons-click:disabled:hover{
+    background-color: #ffdbb9;
+    color: #7f7171;
+}
+
+.formValid__checkbox {
+    margin-top: 15px;
+}
+
+/*Создание стильного чекбокса*/
+/* скрываем чекбокс*/
+.highload-checkbox {
+    position: absolute;
+    opacity: 0; 
+  }
+
+.highload-checkbox  + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+}
+
+/* бокс */
+.highload-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #D58C51;
+    border-radius: 50%;
+}
+
+/* бокс при наведении */
+.highload-checkbox:hover + label:before {
+    background: #D58C51;
+}
+
+/* бокс отмеченный */
+.highload-checkbox:checked + label:before {
+    background: white;
+}
+
+/* отключенный стиль label */
+.highload-checkbox:disabled + label {
+    color: #b7b7b7;
+    cursor: auto;
+}
+
+/* бокс отключенный */
+.highload-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: white;
+}
+
+/* отмеченный */
+.highload-checkbox:checked + label:after {
+    width: 15px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0;
+    left: 3px;
+    border-radius: 100%;
+    background-color: orangered;
+}

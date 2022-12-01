@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #161516;
+}
+
+.depiction {
+  background-image: url('../public/images/backgroundDepiction.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.validation {
+  background-image: url('../public/images/backgroundValidation.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validation:hover {
+  background-image: url('../public/images/backgroundValidation.svg');
+}
+
+code {
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+h4 {
+  color: #D58C51;
+  font-size: 20px;
+  margin-left: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: calc(100vh - 200px);
+  overflow-x: auto;}
+
+  /* Scroll Bar */
+.menu::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+.menu::-webkit-scrollbar-track {
+  background: #ffd0a9;
+}
+.menu::-webkit-scrollbar-thumb {
+  background: #D58C51;
+}
+.menu::-webkit-scrollbar-thumb:hover {
+  background: #ff7300;
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: calc(100vh - 262px);
+  overflow-x: auto;
+}
+
+/* Scroll Bar */
+.basket::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+.basket::-webkit-scrollbar-track {
+  background: #ffd0a9;
+}
+.basket::-webkit-scrollbar-thumb {
+  background: #D58C51;
+}
+.basket::-webkit-scrollbar-thumb:hover {
+  background: #ff7300;
+}
